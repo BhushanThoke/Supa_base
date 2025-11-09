@@ -456,8 +456,6 @@ services:
     depends_on:
       vector:
         condition: service_healthy
-    env_file:
-      - ./.env
     environment:
       POSTGRES_HOST: /var/run/postgresql
       PGPORT: ${POSTGRES_PORT}
